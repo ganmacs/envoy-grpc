@@ -1,0 +1,17 @@
+version: '3'
+services:
+  envoy:
+    build: envoy
+    image: my-envoy:0.1
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+    depends_on:
+      - app
+      - app2
+  app:
+    build: app
+    image: grpc-ruby:0.1
+  app2:
+    build: app2
+    image: grpc-go:0.1

@@ -1,0 +1,25 @@
+GIT
+  remote: https://github.com/ganmacs/grpc
+  revision: 63af0f629a91c09280eb8b0ccd58f9318f1be555
+  branch: trailrs-only-if-possible-always-resource-exhausted
+  submodules: true
+  specs:
+    grpc (1.15.0.dev)
+      google-protobuf (~> 3.1)
+      googleapis-common-protos-types (~> 1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    google-protobuf (3.6.1)
+    googleapis-common-protos-types (1.0.2)
+      google-protobuf (~> 3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  grpc!
+
+BUNDLED WITH
+   1.16.1
